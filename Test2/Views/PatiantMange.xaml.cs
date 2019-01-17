@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using Test2.ViewModels;
+
+namespace Test2.Views
+{
+    /// <summary>
+    /// Interaction logic for PatiantMange.xaml
+    /// </summary>
+    public partial class PatiantMange : UserControl
+    {
+        public PatiantMange()
+        {
+            DataContext = new PatiantMangeViewModel();
+            InitializeComponent();
+        }
+    }
+}
